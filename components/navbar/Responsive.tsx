@@ -18,7 +18,7 @@ export default function Responsive() {
     return()=>window.removeEventListener("scroll",handler)
   },[])
   return (
-    <div className={`transition h-[12vh] ${navBg?`bg-gray-200 dark:bg-[#0f142ed9]`:"dark:bg-[#0d0d1f] bg-gray-100"} px-6 shadow-md w-full
+    <div className={`transition h-[8vh] md:h-[12vh] ${navBg?`bg-gray-200 dark:bg-[#0f142ed9]`:"dark:bg-[#0d0d1f] bg-gray-100"} px-6 shadow-md w-full
        z-40 flex justify-between items-center fixed top-0`}>
       <div className='flex gap-2 cursor-pointer items-center'>
         <span className='p-1 rounded-full bg-white text-[#0d0d1f]'>
@@ -29,14 +29,14 @@ export default function Responsive() {
         </span>
       </div>
       <MainNav />
-      <div className='flex space-x-4 items-center'>
+      <a download={"/Mohammad_FullStack_CV.pdf"} href='/images/Mohammad_FullStack_CV.pdf' className='flex space-x-4 items-center'>
         <button className='cursor-pointer transition text-sm sm:text-xl text-white bg-blue-600 hover:bg-blue-700 
         flex items-center gap-2 rounded-lg p-2
         '>
           <BiDownload />
           Download CV
         </button>
-      </div>
+      </a>
       <MenuIcon onClick={()=>setOpenMobile(true)} className='md:hidden block cursor-pointer'/>
       <Mobile openMobile={opeMobile} setOpenMobile={setOpenMobile}/>
     </div>

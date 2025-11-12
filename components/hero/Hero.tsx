@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import { ArrowRight} from "lucide-react"
+import { ArrowDown, ArrowRight} from "lucide-react"
 import  Typewriter from "typewriter-effect"
 import ParticlesHero from './Particle'
 export default function Hero() {
@@ -14,8 +14,8 @@ export default function Hero() {
         <h1 className='text-xl font-bold max-w-[500px] mt-4 md:mt-8 capitalize text-center tracking-wide sm:text-2xl md:text-4xl'>
             creating web products,<br /> brands, <span className='text-cyan-500'>and experience.</span>
         </h1>
-        <div className='text-xm sm:text-sm md:text-xl flex'>
-            Hi !, I'm Mohammad - A Passionate 
+        <div className='text-xs sm:text-sm md:text-xl'>
+           Hi !, I'm Mohammad- A Passionate
             <Typewriter 
             options={{
                 strings:[
@@ -27,18 +27,18 @@ export default function Hero() {
                 autoStart:true,
                 delay:75,
                 deleteSpeed:25,
-                wrapperClassName:"ps-2 text-cyan-500"
+                wrapperClassName:"ps-2 sm:text-sm md:text-xl text-xs text-cyan-500"
             }}
             />
         </div>
-        <Link className="w-fit mt-4 text-white group px-3 py-2 rounded-xl transition flex items-center 
-        justify-center bg-blue-600 hover:bg-blue-700 cursor-pointer capitalize gap-2" href={"#"}>
-        show my work
-        <div className='relative min-w-6'>
-            <ArrowRight className='absolute transition 
-            group-hover:animate-[var(--animate-arrow-move)] size-5 left-1/2 top-1/2 -translate-1/2'/>
-        </div>
+        <Link
+          href={"#Projects"}
+          className="flex items-center relative z-[10000000] justify-center cursor-pointer w-fit mt-4 text-white px-3 py-2 rounded-xl transition bg-blue-600 hover:bg-blue-700 capitalize gap-2"
+        >
+          show my work
+          <ArrowRight className='size-5' />
         </Link>
+
       </div>
     </div>
   )

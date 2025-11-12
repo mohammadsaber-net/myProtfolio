@@ -6,15 +6,15 @@ export default function Skills() {
 
 
 
-    <div className='pt-20 pb-10 min-h-screen w-[90%] mx-w-2xl sm:w-[80%] mx-auto lg:w-[70%]'>
-      <div className='flex flex-col items-center md:flex-row gap-10'>
+    <div id="Skills" className='pt-20 pb-10 min-h-screen w-[90%] mx-w-2xl sm:w-[80%] mx-auto lg:w-[70%]'>
+      <div className='flex flex-col md:flex-row md:justify-center gap-10'>
         <div>
             <h2 className='text-xl capitalize sm:text-2xl md:text-4xl font-bold'>
                 my work <span className='text-cyan-500'>
                     experience
                 </span>
             </h2>
-            <div className="mt-10 md:mt-16">
+            <div className="mt-5 md:mt-10">
               {canWorkAt.map((work)=>{
               const Icon = work.icon;
               return (
@@ -30,19 +30,19 @@ export default function Skills() {
             )})}  
             </div>
         </div>
-        <div>
-            <h2 className='text-xl mb-16 whitespace-nowrap sm:text-2xl capitalize md:text-3xl font-bold'>
+        <div className="text-start">
+            <h2 className='text-xl mb-4 whitespace-nowrap sm:text-2xl capitalize md:text-3xl font-bold'>
                 my development <span className='text-cyan-500'>
                     tools
                 </span>
             </h2>
-            <div className="mt-5 bg-indigo-200 p-2 rounded-lg dark:bg-[#0f142ed9] grid gap-4 grid-cols-2">
+            <div className="mt-5 md:mt-10 bg-indigo-200 p-2 rounded-lg dark:bg-[#0f142ed9] grid gap-4 grid-cols-2">
               {usedTools.map((tool)=>{
                 const Icon = tool.icon;
                 return(
                   <div key={tool.id} className="w-fit cursor-pointer relative group dark:bg-[#0d0d1f] items-center bg-indigo-400 text-white h-fit flex gap-2 p-1 rounded-full">
                     <Icon className="text-white group-hover:scale-110 transition"/>
-                    <span>{tool.title}</span>
+                    <span >{tool.title}</span>
                   </div>
                 )
               })}
