@@ -14,14 +14,14 @@ export default function Hero() {
         <h1 className='text-xl font-bold max-w-[500px] mt-4 md:mt-8 capitalize text-center tracking-wide sm:text-2xl md:text-4xl'>
             creating web products,<br /> brands, <span className='text-cyan-500'>and experience.</span>
         </h1>
-        <div className='text-sm sm:text-base flex'>
+        <div className='text-xm sm:text-sm md:text-xl flex'>
             Hi !, I'm Mohammad - A Passionate 
             <Typewriter 
             options={{
                 strings:[
                     'Front-End Developer',
                     'Back-End Developer',
-                    'Full-Stack Web Developer'
+                    'Full-Stack Developer'
                 ],
                 loop:true,
                 autoStart:true,

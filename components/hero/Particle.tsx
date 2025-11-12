@@ -65,7 +65,7 @@ export default function ParticlesHero() {
           density: { enable: true, area: 800 },
           value: 60,
         },
-        opacity: { value: 1},
+        opacity: { value: 0.5},
         shape: { type: "circle" },
         size: { value: { min: 1, max: 4 } },
       },

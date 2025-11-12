@@ -40,10 +40,9 @@ export default function Skills() {
               {usedTools.map((tool)=>{
                 const Icon = tool.icon;
                 return(
-                  <div className="w-fit relative group dark:bg-[#0d0d1f] items-center bg-indigo-400 text-white h-fit flex gap-2 p-1 rounded-full">
+                  <div key={tool.id} className="w-fit cursor-pointer relative group dark:bg-[#0d0d1f] items-center bg-indigo-400 text-white h-fit flex gap-2 p-1 rounded-full">
                     <Icon className="text-white group-hover:scale-110 transition"/>
                     <span>{tool.title}</span>
-                    <span className="absolute -top-10"></span>
                   </div>
                 )
               })}

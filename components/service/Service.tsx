@@ -11,8 +11,8 @@ export default function Service() {
       </h2>
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {Services.map(({id,image,title,info})=>(
-          <div key={id} className="flex mx-auto flex-col gap-4">
-            <img src={image} className="w-12 h-12" alt="" />
+          <div key={id} className="flex mx-auto flex-col gap-2">
+            <img src={image} className="w-16 h-16" alt="" />
             <h3 className="text-xl text-cyan-500 text-start sm:text-2xl md:text-3xl font-bold">
               {title}
             </h3>
