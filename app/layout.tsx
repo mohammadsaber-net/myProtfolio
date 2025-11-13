@@ -4,9 +4,11 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/DarkMode";
 import { ModeToggle } from "@/components/ui/ToggleMode";
 import Responsive from "@/components/navbar/Responsive";
+import Footer from "@/components/footer/footer";
+import Scroll from "@/components/scroll/Scroll";
 
 const inter = Inter({
-  weight: ["100","900","400","800","500"],
+  weight: ["100",'200',"300","600","700","900","400","800","500"],
   subsets: ["latin"],
 });
 
@@ -31,9 +33,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Responsive />
+            <Scroll />
             <ModeToggle />
             {children}
+            <Footer />
           </ThemeProvider>
       </body>
     </html>

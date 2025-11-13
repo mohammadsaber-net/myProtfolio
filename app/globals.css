@@ -28,6 +28,3 @@ html{
   50% { transform: translateX(-35%); }
   100% { transform: translateX(-50%); }
 }
-item{
-  background-color: #696868a9;
-}

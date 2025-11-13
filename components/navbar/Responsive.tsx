@@ -18,7 +18,7 @@ export default function Responsive() {
     return()=>window.removeEventListener("scroll",handler)
   },[])
   return (
-    <div className={`transition h-[8vh] md:h-[12vh] ${navBg?`bg-gray-200 dark:bg-[#0f142ed9]`:"dark:bg-[#0d0d1f] bg-gray-100"} px-6 shadow-md w-full
+    <div className={`transition h-[8vh] md:h-[12vh] ${navBg?`bg-[#9e9a9aa9] dark:bg-[#0f142ed9]`:"dark:bg-[#0d0d1f] bg-gray-100"} px-6 shadow-md w-full
        z-40 flex justify-between items-center fixed top-0`}>
       <div className='flex gap-2 cursor-pointer items-center'>
         <span className='p-1 rounded-full bg-white text-[#0d0d1f]'>
