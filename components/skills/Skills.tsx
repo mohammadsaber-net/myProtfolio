@@ -6,9 +6,9 @@ export default function Skills() {
     <div id="Skills" className='pt-20 pb-10 min-h-screen w-[90%] mx-w-2xl sm:w-[80%] mx-auto lg:w-[70%]'>
       <div className='flex flex-col md:justify-center gap-10'>
         <div>
-            <h2 data-aos="fade-up" className='text-xl capitalize sm:text-2xl md:text-4xl font-bold'>
-                my work <span className='text-cyan-500'>
-                    experience
+            <h2 data-aos="fade-up" className='text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide'>
+                What I do in  <span className='text-cyan-500'>
+                    real projects
                 </span>
             </h2>
             <div data-aos="zoom-in" data-aos-anchor-placement="top-center"  className="mt-5 md:mt-10">
@@ -28,12 +28,12 @@ export default function Skills() {
             </div>
         </div>
         <div className="text-start">
-            <h2 data-aos="fade-down" className='text-xl mb-4 whitespace-nowrap sm:text-2xl capitalize md:text-3xl font-bold'>
-                my development <span className='text-cyan-500'>
-                    tools
+            <h2 data-aos="fade-down" className='text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide'>
+                Tools & <span className='text-cyan-500'>
+                     Technologies
                 </span>
             </h2>
-            <div data-aos="zoom-out" data-aos-delay="200" data-aos-anchor-placement="top-center" className="p-2 rounded-lg flex flex-wrap gap-6 m-5 md:mt-10">
+            <div data-aos="zoom-out" data-aos-delay="200" data-aos-anchor-placement="top-center" className="rounded-lg flex flex-wrap gap-6 m-5 md:mt-10">
               {usedTools.map((tool)=>{
                 const Icon = tool.icon;
                 return(
@@ -41,13 +41,8 @@ export default function Skills() {
                     <div className="flex flex-col justify-center text-white items-center w-36 h-36 px-3 py-6 bg-indigo-400 shadow dark:bg-[#14134145] rounded-2xl">
                       <Icon className="text-3xl"/>
                       <span className="text-2xl">{tool.title}</span>
-                      <span className="text-sm">{tool.level} %</span>
                     </div>
                   </Tilt>
-                  // <div key={tool.id} className="w-fit cursor-pointer relative group dark:bg-[#0d0d1f] items-center bg-indigo-400 text-white h-fit flex gap-2 p-1 rounded-full">
-                  //   <Icon className="text-white group-hover:scale-110 transition"/>
-                  //   <span >{tool.title}</span>
-                  // </div>
                 )
               })}
             </div>

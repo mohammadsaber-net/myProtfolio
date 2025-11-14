@@ -7,11 +7,11 @@ import { useState } from "react";
 export default function Projects() {
   return (
     <div id="Projects" className='min-h-screen w-[90%] sm:w-[80%] lg:w-[70%] mx-auto pt-20 pb-10'>
-      <h2 data-aos="fade-up" className='text-xl text-center mb-16 whitespace-nowrap sm:text-2xl capitalize md:text-3xl font-bold'>
+      <h2 data-aos="fade-up" className='text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide'>
         A small selection of recent <span className='text-cyan-500 block'>projects</span>
       </h2>
 
-      <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="200" className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="100" className="grid grid-cols-1 mt-5 md:mt-10 gap-10 md:grid-cols-2 xl:grid-cols-4">
         {projects.map((data) => {
           const icon = data.tools;
           return (

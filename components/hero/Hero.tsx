@@ -11,10 +11,10 @@ export default function Hero() {
         <div data-aos="fade-up" className='overflow-hidden border-2 w-[150px] rounded-full h-[150px] border-gray-500'>
             <img src="/images/user-1756384189933.jpeg" alt="hero image" className='w-full object-cover h-full'/>
         </div>
-        <h1 data-aos="fade-up" data-aos-delay="100" className='text-xl font-bold max-w-[500px] mt-4 md:mt-8 capitalize text-center tracking-wide sm:text-2xl md:text-4xl'>
-            creating web products,<br /> brands, <span className='text-cyan-500'>and experience.</span>
+        <h1 data-aos="fade-up" data-aos-delay="100" className='text-xl font-bold max-w-[550px] mt-4 md:mt-8 capitalize text-center tracking-wide sm:text-2xl md:text-4xl'>
+            Creating modern UIs,clean architecture, and high-performance <span className='text-cyan-500'>web applications.</span>
         </h1>
-        <div  data-aos="fade-down" data-aos-delay="200" className='text-xs sm:text-sm md:text-xl'>
+        <div  data-aos="fade-down" data-aos-delay="100" className='text-xs flex sm:text-sm md:text-xl'>
            Hi !, I'm Mohammad- A Passionate
             <Typewriter 
             options={{
@@ -31,7 +31,7 @@ export default function Hero() {
             }}
             />
         </div>
-        <Link data-aos="zoom-in" data-aos-delay="300" 
+        <Link data-aos="zoom-in" data-aos-delay="100" 
           href={"#Projects"}
           className="flex items-center  justify-center cursor-pointer w-fit mt-4 text-white px-3 py-2 rounded-xl transition bg-blue-600 hover:bg-blue-700 capitalize gap-2"
         >

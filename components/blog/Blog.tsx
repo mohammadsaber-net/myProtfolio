@@ -9,7 +9,7 @@ export default function Blog() {
         <h2 data-aos="zoom-out" data-aos-delay="100" className="text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide">
             my latest <span className="text-cyan-500">blogs</span>
         </h2>
-        <div data-aos-delay="200"
+        <div data-aos-delay="100"
         data-aos="zoom-out" data-aos-anchor-placement="top-center" 
         className="mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {blog.map((item)=>{

@@ -14,39 +14,75 @@ import Blog from "@/components/blog/Blog";
 import {MERNstack,WebsiteImportance} from "@/components/blogDetails/blogsBody";
 export const Nav=[
     {id:1,url:"#Service",label:"Service"},
-    {id:2,url:"#Skills",label:"Skills"},
     {id:3,url:"#Projects",label:"Projects"},
-    // {id:4,url:"#",label:"About"},
+    {id:2,url:"#Skills",label:"Work-experience"},
     {id:6,url:"#Blog",label:"Blog"},
-    {id:5,url:"#Contact",label:"Contact"},
+    {id:5,url:"#Contact",label:"Hire Me"},
 ]
-export const Services=[
-    {id:1,image:"/images/s1.webp",title:"UI and UX",info:"Designing interfaces that are intuitive, efficient, and enjoyable to use."},
-    {id:2,image:"/images/s2.webp",title:"Web and Mobile App",info:"Designing interfaces that are intuitive, efficient, and enjoyable to use."},
-    {id:3,image:"/images/s3.webp",title:"Design & Creative",info:"Designing interfaces that are intuitive, efficient, and enjoyable to use."},
-    {id:4,image:"/images/s4.webp",title:"Development",info:"Designing interfaces that are intuitive, efficient, and enjoyable to use."}
-]
-export const canWorkAt=[
-    {id:1,icon:FaCodepen,title:"Full-Stack Developer",info:"Designing interfaces that are intuitive, efficient, and enjoyable to use."},
-    {id:2,icon:FaReact,title:"Front-End Developer",info:"Designing interfaces that are intuitive, efficient, and enjoyable to use."},
-    {id:3,icon:FaDatabase,title:"Backend Developer",info:"Designing interfaces that are intuitive, efficient, and enjoyable to use."}
-]
+export const Services = [
+  {
+    id: 1,
+    image: "/images/s1.webp",
+    title: "Frontend Development",
+    info: "Building responsive, modern, and user-friendly interfaces using React and Next.js.",
+  },
+  {
+    id: 2,
+    image: "/images/s2.webp",
+    title: "Backend Development",
+    info: "Creating secure, scalable APIs with Node.js, Express, and database integrations.",
+  },
+  {
+    id: 3,
+    image: "/images/s4.webp",
+    title: "Full-Stack Web Applications",
+    info: "Delivering complete web solutions from UI to database with optimized performance.",
+  },
+  {
+    id: 4,
+    image: "/images/s3.webp",
+    title: "UI Implementation",
+    info: "Translating UI/UX designs into high-quality, pixel-perfect code using Tailwind CSS.",
+  }
+];
+
+export const canWorkAt = [
+  {
+    id: 1,
+    icon: FaCodepen,
+    title: "Problem Solving",
+    info: "Analyzing problems and building efficient, scalable solutions using modern web technologies.",
+  },
+  {
+    id: 2,
+    icon: FaReact,
+    title: "Frontend Engineering",
+    info: "Implementing clean, accessible, and optimized interfaces with React, Next.js, and Tailwind CSS.",
+  },
+  {
+    id: 3,
+    icon: FaDatabase,
+    title: "Backend Engineering",
+    info: "Designing structured APIs, managing databases, and ensuring performance with Node.js and MongoDB.",
+  }
+];
+
 export const usedTools=[
-    {id:1,icon:FaHtml5,title:"HTML",level:"85"},
-    {id:2,icon:FaCss3Alt,title:"CSS",level:"85"},
-    {id:3,icon:SiJavascript,title:"Javascript",level:"85"},
-    {id:4,icon:SiTypescript,title:"Typescript",level:"80"},
-    {id:5,icon:SiMongodb,title:"MongoDB",level:"75"},
-    {id:6,icon:SiNextdotjs,title:"Next.js",level:"75"},
-    {id:7,icon:FaReact,title:"React.js",level:"85"},
-    {id:8,icon:FaAngular,title:"Angular.js",level:"70"},
-    {id:9,icon:FaBootstrap,title:"Bootstrap",level:"70"},
-    {id:10,icon:FaGitAlt,title:"Git",level:"80"},
-    {id:11,icon:SiTailwindcss,title:"TailwindCss",level:"85"},
-    {id:12,icon:FaGithub,title:"GitHub",level:"85"},
-    {id:13,icon:SiRedux,title:"Redux",level:"80"},
-    {id:14,icon:SiVercel,title:"Vercel",level:"80"},
-    {id:15,icon:SiRender,title:"Render",level:"80"},
+    {id:1,icon:FaHtml5,title:"HTML"},
+    {id:2,icon:FaCss3Alt,title:"CSS"},
+    {id:3,icon:SiJavascript,title:"Javascript"},
+    {id:4,icon:SiTypescript,title:"Typescript"},
+    {id:5,icon:SiMongodb,title:"MongoDB"},
+    {id:6,icon:SiNextdotjs,title:"Next.js"},
+    {id:7,icon:FaReact,title:"React.js"},
+    {id:8,icon:FaAngular,title:"Angular.js"},
+    {id:9,icon:FaBootstrap,title:"Bootstrap"},
+    {id:10,icon:FaGitAlt,title:"Git"},
+    {id:11,icon:SiTailwindcss,title:"TailwindCss"},
+    {id:12,icon:FaGithub,title:"GitHub"},
+    {id:13,icon:SiRedux,title:"Redux"},
+    {id:14,icon:SiVercel,title:"Vercel"},
+    {id:15,icon:SiRender,title:"Render"},
 ]
 export const projects=[
     {

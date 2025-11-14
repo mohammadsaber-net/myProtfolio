@@ -16,19 +16,15 @@ export default function Home() {
     easing: "ease",
     once: true,
     anchorPlacement: "top-bottom",
-  });
-  setTimeout(() => {
-    AOS.refresh();
-  }, 500);
+  })
 }, []);
-
   return (
     <div >
       <Responsive />
       <Hero />
       <Service />
-      <Skills />
       <Projects />
+      <Skills />
       <Blog />
       <Contact />
 

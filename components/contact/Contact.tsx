@@ -2,6 +2,7 @@ import { LocateIcon, Phone } from "lucide-react";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import ContactForm from "./contactForm";
 
 export default function Contact() {
   return (
@@ -9,11 +10,11 @@ export default function Contact() {
       <div className="flex gap-10 flex-col md:flex-row">
         <div className="bg-gray-200 dark:bg-[#0d0d1f] p-2 rounded-sm">
         <h2 data-aos="fade-up" className="text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide">
-            ask for your website <span className="block text-cyan-500">now</span>
+            Let’s Build Your <span className="block text-cyan-500"> Project</span>
         </h2>
         <div
-        data-aos-delay="200"
-        data-aos="fade-left" data-aos-anchor-placement="top-center" 
+        data-aos-delay="100"
+        data-aos="zoom-in" data-aos-anchor-placement="top-center" 
         >
 
         <div className="dark:text-gray-300 max-w-48 mt-5 mb-10 text-gray-700 text-sm">
@@ -35,7 +36,7 @@ export default function Contact() {
             </a>
             <div className="flex mb-3 dark:text-white hover:text-blue-700 transition text-blue-600 gap-2 items-center">
                 <LocateIcon className="text-cyan-500"/>
-                <div>El-menofia Egypt</div>
+                <div>El-menofia, Egypt</div>
             </div>
         </div>
         <div className="flex mb-4 mt-6 gap-1 items-center">
@@ -52,7 +53,7 @@ export default function Contact() {
                 <FaLinkedin size={36}/>
             </a>
             <a
-            href="https://t.me/yourusername" 
+            href="https://t.me/@moh123ph" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-4 transition-all duration-300 cursor-pointer rounded-full hover:text-white hover:bg-[#0088CC]">
@@ -70,20 +71,21 @@ export default function Contact() {
     </div>
         <div className="bg-gray-200 dark:bg-[#0d0d1f] p-2 rounded-sm">
         <h2 data-aos="fade-down" className="text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide">
-            send an email
+            send me a <span className="text-cyan-500">message</span>
         </h2>
         <div
-        data-aos-delay="200"
-        data-aos="fade-right" data-aos-anchor-placement="top-center" 
+        data-aos-delay="100"
+        data-aos="zoom-out" data-aos-anchor-placement="top-center" 
         className="mt-5">
-            <input type="text" className="px-4 mb-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none rounded-md w-full placeholder:text-black dark:placeholder:text-white " placeholder="name" />
+            <ContactForm />
+            {/* <input type="text" className="px-4 mb-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none rounded-md w-full placeholder:text-black dark:placeholder:text-white " placeholder="name" />
             <input type="email" className="px-4 mb-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none rounded-md w-full placeholder:text-black dark:placeholder:text-white " placeholder="email address" />
             <input type="number" placeholder="phone number" className="mb-4 px-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none placeholder:text-black rounded-md w-full dark:placeholder:text-white "/>
             <textarea name="" placeholder="your message" className="resize-none w-full px-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none rounded-md 
             dark:placeholder:text-white placeholder:text-black max-w-96 h-40 overflow-auto" id=""></textarea>
             <button className="px-4 mt-4 mb-4 py-3.5 bg-slate-300 shadow-sm text-black dark:text-white dark:bg-[#363659] cursor-pointer rounded-full">
-                send message
-            </button>
+                Submit
+            </button> */}
         </div>
         </div>
       </div>
