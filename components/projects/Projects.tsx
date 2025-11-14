@@ -11,7 +11,7 @@ export default function Projects() {
         A small selection of recent <span className='text-cyan-500 block'>projects</span>
       </h2>
 
-      <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="100" className="grid grid-cols-1 mt-5 md:mt-10 gap-10 md:grid-cols-2 xl:grid-cols-4">
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-center" className="grid grid-cols-1 mt-5 md:mt-10 gap-10 md:grid-cols-2 xl:grid-cols-4">
         {projects.map((data) => {
           const icon = data.tools;
           return (

@@ -33,7 +33,7 @@ export default function Skills() {
                      Technologies
                 </span>
             </h2>
-            <div data-aos="zoom-out" data-aos-delay="200" data-aos-anchor-placement="top-center" className="rounded-lg flex flex-wrap gap-6 m-5 md:mt-10">
+            <div data-aos="zoom-out" data-aos-anchor-placement="top-center" className="rounded-lg flex flex-wrap gap-6 m-5 md:mt-10">
               {usedTools.map((tool)=>{
                 const Icon = tool.icon;
                 return(

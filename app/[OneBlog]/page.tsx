@@ -30,7 +30,7 @@ export default async function Page({params}:{ params: { OneBlog: number }}) {
       <div className="text-xl mt-1 my-4 border-b border-gray-300 dark:text-white text-gray-700 sm:text-2xl capitalize text-center">
         {Blogs[0].title}
       </div>
-      <div className="md:max-w-[80%]">
+      <div className="max-w-2xl">
           <Body />
       </div>
         </div>

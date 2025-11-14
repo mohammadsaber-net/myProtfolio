@@ -13,7 +13,6 @@ export default function Contact() {
             Let’s Build Your <span className="block text-cyan-500"> Project</span>
         </h2>
         <div
-        data-aos-delay="100"
         data-aos="zoom-in" data-aos-anchor-placement="top-center" 
         >
 
@@ -74,8 +73,7 @@ export default function Contact() {
             send me a <span className="text-cyan-500">message</span>
         </h2>
         <div
-        data-aos-delay="100"
-        data-aos="zoom-out" data-aos-anchor-placement="top-center" 
+        data-aos="zoom-in" data-aos-anchor-placement="top-center" 
         className="mt-5">
             <ContactForm />
             {/* <input type="text" className="px-4 mb-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none rounded-md w-full placeholder:text-black dark:placeholder:text-white " placeholder="name" />
