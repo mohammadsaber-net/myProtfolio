@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 import Mobile from './Mobile'
 import { MenuIcon } from 'lucide-react'
 
-export default function Responsive() {
+export default function Responsive({dict}:{dict:any}) {
   const [navBg,setNavBg]=useState(false)
   const [opeMobile,setOpenMobile]=useState(false)
   useEffect(()=>{
@@ -25,7 +25,7 @@ export default function Responsive() {
             <FaCode size={20}/>
         </span>
         <span className='text-sm md:text-lg'>
-            Mohammad
+            {dict.nav["logo"]}
         </span>
       </div>
       <MainNav />
@@ -34,7 +34,7 @@ export default function Responsive() {
         flex items-center gap-2 rounded-lg p-2
         '>
           <BiDownload />
-          Download CV
+          {dict.nav["download"]}
         </button>
       </a>
       <MenuIcon onClick={()=>setOpenMobile(true)} className='md:hidden block cursor-pointer'/>

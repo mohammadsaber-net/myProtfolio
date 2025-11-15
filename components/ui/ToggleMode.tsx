@@ -15,7 +15,7 @@ export function ModeToggle() {
 
   return (
     <button
-      className="fixed top-20 left-2 p-1 rounded-full dark:bg-gray-50 bg-gray-900 dark:text-gray-900 text-gray-50 cursor-pointer z-[10000]"
+      className="p-1 rounded-full dark:bg-gray-50 bg-gray-900 dark:text-gray-900 text-gray-50 cursor-pointer"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       {theme === "dark" ? <Sun /> : <Moon />}

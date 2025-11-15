@@ -1,7 +1,8 @@
 "use client"
-import { Nav } from '@/data/data'
 import Link from 'next/link'
 import { X } from 'lucide-react'
+import { useApp } from '../context/AppContext'
+import { NavItem } from '@/interface'
 
 type Props = {
   setOpenMobile: React.Dispatch<React.SetStateAction<boolean>>
@@ -9,6 +10,8 @@ type Props = {
 }
 
 export default function Mobile({setOpenMobile,openMobile}:Props) {
+  const app = useApp() as { Nav?: NavItem[] } | null;
+    const Nav = app?.Nav ?? [];
   return (
     // "opacity-100" : "opacity-0 pointer-events-none"
     <div

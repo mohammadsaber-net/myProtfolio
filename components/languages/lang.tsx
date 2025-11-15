@@ -12,10 +12,10 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className='fixed top-20 left-4'>
+    <div className=''>
         <div className="flex gap-2">
-      <button onClick={() => switchLanguage('en')}>EN</button>
-      <button onClick={() => switchLanguage('ar')}>AR</button>
+      <button className='cursor-pointer' onClick={() => switchLanguage('en')}>EN</button>
+      <button className='cursor-pointer' onClick={() => switchLanguage('ar')}>AR</button>
     </div>
     </div>
   );

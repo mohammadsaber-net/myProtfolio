@@ -1,19 +1,26 @@
 "use client"
-import { projects } from "@/data/data";
+import { ProjectItem } from "@/interface";
 import { Link2 } from "lucide-react";
 import Link from 'next/link'
-import { useState } from "react";
-
+import { useApp } from "../context/AppContext";
+import { FaReact,FaBootstrap,FaHtml5 } from "react-icons/fa";
+import {SiJavascript,SiTailwindcss,SiRedux,SiNextdotjs,SiVercel,SiRender,SiMongodb} from "react-icons/si";
 export default function Projects() {
+ const iconMap: Record<string, React.ComponentType<any>> = {
+  "FaHtml5":FaHtml5, "FaBootstrap":FaBootstrap, "FaReact":FaReact,"SiTailwindcss":SiTailwindcss,"SiJavascript":SiJavascript,
+  "SiMongodb":SiMongodb, "SiRedux":SiRedux, "SiRender":SiRender,"SiNextdotjs":SiNextdotjs,"SiVercel":SiVercel
+};
+      const app = useApp() as { Projects?: ProjectItem } | null;
+        const projects = app?.Projects?.projects ?? [];
+        const mainTitle = app?.Projects?.mainTitle ?? { title1: '', title2: '' };
   return (
     <div id="Projects" className='min-h-screen w-[90%] sm:w-[80%] lg:w-[70%] mx-auto pt-20 pb-10'>
       <h2 data-aos="fade-up" className='text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide'>
-        A small selection of recent <span className='text-cyan-500 block'>projects</span>
+       {mainTitle.title1}<span className='text-cyan-500 block'>{mainTitle.title2}</span>
       </h2>
 
       <div data-aos="zoom-in" data-aos-anchor-placement="top-center" className="grid grid-cols-1 mt-5 md:mt-10 gap-10 md:grid-cols-2 xl:grid-cols-4">
         {projects.map((data) => {
-          const icon = data.tools;
           return (
             <div
               key={data.id}
@@ -51,11 +58,15 @@ export default function Projects() {
               </h3>
 
               <div className="flex gap-2 flex-wrap items-center">
-                {icon.map((Icon, index) => (
-                  <span key={index} className="flex p-1 rounded-sm dark:bg-[#0d0d1f] items-center bg-indigo-400 gap-1">
+                {data.tools.map((tool) => {
+                  const key = String(tool);
+                  const Icon = iconMap[key] ?? (() => null);
+                  return(
+                  <span key={key} className="flex p-1 rounded-sm dark:bg-[#0d0d1f] items-center bg-indigo-400 gap-1">
                     <Icon />
                   </span>
-                ))}
+                )})}
+              
               </div>
             </div>
           );

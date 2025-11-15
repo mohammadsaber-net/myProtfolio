@@ -1,7 +1,7 @@
 import { blog } from "@/data/data"
 import Link from "next/link"
 
-export default async function Page({params}:{ params: { OneBlog: number }}) {
+export default async function Page({params}:{ params: { OneBlog: number}}) {
   const {OneBlog} =await params
   console.log(OneBlog)
   const Blogs=blog.filter(item=>{
@@ -9,11 +9,11 @@ export default async function Page({params}:{ params: { OneBlog: number }}) {
   })
   const Body=Blogs[0].body
   return (
-    <div className="m-4 mt-6 min-h-screen relative">
-      <Link href={"/#Blog"} className="absolute top-2 transition hover:bg-blue-800 right-4 p-2 rounded-md text-white bg-blue-600">
-      back to main blogs
+    <div className="m-4 min-h-screen relative">
+      <Link href={"/#Blog"} className="fixed text-center transition hover:bg-blue-800 top-0 right-0 w-full p-2 text-white bg-blue-600">
+      back to main blog
       </Link>
-      <div>
+      <div className="mt-16">
         <img src={Blogs[0].image} className="max-w-80 max-h-80" alt="" />
       <div className="text-gray-500 mt-2 mb-4 justify-center text-sm flex gap-6">
         <span>written by: <span className="text-cyan-500">mohammad saber</span></span>

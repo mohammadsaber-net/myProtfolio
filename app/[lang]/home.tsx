@@ -1,15 +1,15 @@
 "use client"
-import { useEffect } from "react";
 import AOS from "aos"
 import "aos/dist/aos.css"
 import Hero from "@/components/hero/Hero";
 import Projects from "@/components/projects/Projects";
 import Service from "@/components/service/Service";
 import Skills from "@/components/skills/Skills";
-import Blog from "@/components/blog/Blog";
+import Blog from "./blog/Blog";
 import Responsive from "@/components/navbar/Responsive";
 import Contact from "@/components/contact/Contact";
-export default function Home() {
+import { useEffect } from "react";
+export default function HomeClient({ lang, dict }: { lang: "en" | "ar", dict: any }){
   useEffect(() => {
   AOS.init({
     duration: 1000,
@@ -19,15 +19,14 @@ export default function Home() {
   })
 }, []);
   return (
-    <div >
-      <Responsive />
-      <Hero />
+    <div className="overflow-hidden">
+      <Responsive dict={dict}/>
+      <Hero dict={dict}/>
       <Service />
       <Projects />
       <Skills />
-      <Blog />
+      <Blog lang={lang}/>
       <Contact />
-
     </div>
   );
 }

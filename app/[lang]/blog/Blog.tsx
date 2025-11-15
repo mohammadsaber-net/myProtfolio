@@ -3,7 +3,7 @@ import { blog } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Blog() {
+export default function Blog({lang}:{lang:string}) {
   return (
     <div id="Blog" className='min-h-screen py-10 w-[90%] sm:w-[80%] lg:w-[80%] max-w-3xl mx-auto'>
         <h2 data-aos="zoom-out" className="text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide">
@@ -17,7 +17,7 @@ export default function Blog() {
               <div key={item.id} className="overflow-hidden p-2 bg-gray-200 dark:bg-[#0f142ed9] rounded-md shadow-md hover:shadow-lg transition">
                 <Image width={500} height={500} src={item.image} className="object-cover" alt="image"/>
                 <span className="text-gray-500 text-sm">13 nov 2025</span>
-                <Link href={`/${item.id}`} className="text-base sm:text-xl transition hover:text-cyan-600
+                <Link href={`${lang}/blog/${item.id}`} className="text-base sm:text-xl transition hover:text-cyan-600
                  hover:underline block capitalize mt-2 mb-4 cursor-pointer
                 ">{item.title}</Link>
                   <div className="flex gap-2 flex-wrap">

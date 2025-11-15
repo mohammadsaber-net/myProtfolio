@@ -1,4 +1,12 @@
-{
+{"nav":{
+    "logo":"Mohammad",
+    "service":"Service",
+    "projects":"Projects",
+    "work": "Work-experience",
+    "blog":"Blok",
+    "hire": "Hire Me",
+    "download": "DownLoad CV"
+    },
     "hero":{
         "title1-1":"Creating modern UIs,clean architecture, and high-performance ",
         "title1-2":"web applications. ",
@@ -7,6 +15,36 @@
         "title3":"show my work"
     },
     "service":{
+        "title1-1":"that we offers",
+        "title1-2":" services",
+        "title2-1":"Frontend Development",
+        "title2-2":"Building responsive, modern, and user-friendly interfaces using React and Next.js.",
+        "title3-1":"Backend Development",
+        "title3-2":"Creating secure, scalable APIs with Node.js, Express, and database integrations.",
+        "title4-1":"Full-Stack Web Applications",
+        "title4-2":"Delivering complete web solutions from UI to database with optimized performance.",
+        "title5-1":"UI Implementation",
+        "title5-2":"Translating UI/UX designs into high-quality, pixel-perfect code using Tailwind CSS."
+
+    },
+    "project":{
+        "title1-1":"A small selection of recent",
+        "title1-2":" projects",
+        "title2":"A Modern E-commerce Website",
+        "title3":"Mini-Facebook Website",
+        "title4":"A Super Class Portfolio"
+    },
+    "skill":{
+        "title1-1":"What you will get in case of",
+        "title1-2":"hiring me",
+        "title2-1":"Problem Solving",
+        "title2-2":"Analyzing problems and building efficient, scalable solutions using modern web technologies.",
+        "title3-1":"Frontend Engineering",
+        "title3-2":"Implementing clean, accessible, and optimized interfaces with React, Next.js, and Tailwind CSS.",
+        "title4-1":"Backend Engineering",
+        "title4-2":"Designing structured APIs, managing databases, and ensuring performance with Node.js and MongoDB.",
+        "title5-1":"tools & ",
+        "title5-2":"Technologies"
         
     }
 }

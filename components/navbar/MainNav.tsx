@@ -1,8 +1,9 @@
-import { Nav } from '@/data/data'
 import Link from 'next/link'
-import React from 'react'
-
+import { useApp } from '../context/AppContext'
+import { NavItem } from '@/interface'
 export default function MainNav() {
+  const app = useApp() as { Nav?: NavItem[] } | null;
+  const Nav = app?.Nav ?? [];
   return (
     <div className='hidden md:flex px-2 gap-4 rounded-full'>
       {Nav.map((navLink)=>(
