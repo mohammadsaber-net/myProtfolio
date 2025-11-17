@@ -1,9 +1,9 @@
 "use client"
 import Link from 'next/link'
-import { ArrowRight} from "lucide-react"
+import { ArrowLeft, ArrowRight} from "lucide-react"
 import  Typewriter from "typewriter-effect"
 import ParticlesHero from './Particle'
-export default function Hero({dict}:{dict:any}) {
+export default function Hero({dict,lang}:{dict:any,lang:string}) {
   const heroDict=dict.hero
   return (
     <div className='h-screen text-center w-full flex justify-center relative items-center overflow-hidden'>
@@ -16,7 +16,6 @@ export default function Hero({dict}:{dict:any}) {
             {heroDict["title1-1"]} <span className='text-cyan-500'>{heroDict["title1-2"]}</span>
         </h1>
         <div  data-aos="fade-down" data-aos-delay="100" className='text-xs flex sm:text-sm md:text-xl'>
-           {/* Hi !, I'm Mohammad- A Passionate */}
            {heroDict["title2-1"]}
             <Typewriter 
             options={{
@@ -34,7 +33,8 @@ export default function Hero({dict}:{dict:any}) {
           className="flex items-center  justify-center cursor-pointer w-fit mt-4 text-white px-3 py-2 rounded-xl transition bg-blue-600 hover:bg-blue-700 capitalize gap-2"
         >
           {heroDict["title3"]}
-          <ArrowRight className='size-5' />
+          {lang==="en"&&<ArrowRight className='size-5' />}
+          {lang==="ar"&&<ArrowLeft className='size-5' />}
         </Link>
 
       </div>

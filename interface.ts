@@ -31,12 +31,14 @@ export interface ProjectItem {
   mainTitle: {
     title1:string,
     title2:string,
+    code:string,
+    demo:string
   };
   projects: project[];
 }
 export interface skill {
   id: number;
-  icon:React.ComponentType;
+  icon:string;
   title: string;
   info: string;
 }
@@ -48,4 +50,18 @@ export interface SkillsItem {
     title4:string,
   };
   skills: skill[];
+}
+export interface blog {
+  id: number;
+  image:string;
+  title: string;
+  keyWords: { Icon: string; name: string }[];
+  body:string
+}
+export interface BlogsItem {
+  mainTitle: {
+    title1:string,
+    title2:string
+  };
+  blogs: blog[];
 }

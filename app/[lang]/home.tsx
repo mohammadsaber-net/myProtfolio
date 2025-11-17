@@ -20,13 +20,13 @@ export default function HomeClient({ lang, dict }: { lang: "en" | "ar", dict: an
 }, []);
   return (
     <div className="overflow-hidden">
-      <Responsive dict={dict}/>
-      <Hero dict={dict}/>
+      <Responsive dict={dict} lang={lang}/>
+      <Hero dict={dict} lang={lang}/>
       <Service />
       <Projects />
       <Skills />
       <Blog lang={lang}/>
-      <Contact />
+      <Contact lang={lang} dict={dict}/>
     </div>
   );
 }

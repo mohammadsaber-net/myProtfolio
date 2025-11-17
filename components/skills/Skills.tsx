@@ -22,9 +22,7 @@ export default function Skills() {
             </h2>
             <div data-aos="zoom-in" data-aos-anchor-placement="top-center"  className="mt-5 md:mt-10">
               {canWorkAt.map((work)=>{
-                const key = String(work);
-                const Icon = iconMap[key] ?? (() => null);
-                console.log(Icon)
+                const Icon=iconMap[work.icon]
               return (
               <div key={work.id} className="mt-4 shadow-sm flex group gap-4 bg-indigo-200 dark:bg-[#0f142ed9] p-5 rounded-md md:mt-8">
                 <div className="dark:bg-[#0d0d1f] bg-indigo-400 p-2 w-fit h-fit rounded-full">

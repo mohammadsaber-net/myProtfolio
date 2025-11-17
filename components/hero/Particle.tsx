@@ -24,13 +24,12 @@ export default function ParticlesHero() {
   }, []);
 
   const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
   };
 
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: { value: "transparent" }, // Transparent for overlay use
+        color: { value: "transparent" },
       },
       fullScreen: {
         enable: false,

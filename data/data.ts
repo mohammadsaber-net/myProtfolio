@@ -109,6 +109,8 @@ export const myProjects=(dict:any)=>{
   return {Projects:{mainTitle:{
     title1:project["title1-1"],
     title2:project["title1-2"],
+    code:project["code"],
+    demo:project["demo"],
   },
     projects:[
     {
@@ -139,32 +141,37 @@ export const myProjects=(dict:any)=>{
 ]}}}
 
 
-export const blog=[
-    {
-        id:1,
-        image:"/images/b1.webp",
-        title:"why you should Use MERN & next.js stack in your project ?",
-        body:MERNstack,
+export const myBlogs=(dict:any)=>{
+  const blog=dict.blog
+  return{Blogs:{
+    mainTitle:{
+    title1:blog["title1-1"],
+    title2:blog["title1-2"]
+  },blogs:[{
+    id:1,
+    image:"/images/b1.webp",
+        title:blog["title2"],
+        body:"MERNstack",
         keyWords:[
-            {Icon:SiNextdotjs,name:"Next.js"},
-            {Icon:SiNodedotjs,name:"Node.js"},
-            {Icon:SiMongodb,name:"MongoDB"},
-            {Icon:SiJavascript,name:"Javascript"},
-            {Icon:FaReact,name:"React.js"},
-            {Icon:FaServer,name:"Express.js"}
+            {Icon:"SiNextdotjs",name:"Next.js"},
+            {Icon:"SiNodedotjs",name:"Node.js"},
+            {Icon:"SiMongodb",name:"MongoDB"},
+            {Icon:"SiJavascript",name:"Javascript"},
+            {Icon:"FaReact",name:"React.js"},
+            {Icon:"FaServer",name:"Express.js"}
         ]
     },
-    {
-        id:2,
+      {id:2,
         image:"/images/ecommerce.jpg",
-        title:"importance of making a website for your project ex a ecommerce",
-        body:WebsiteImportance,
+        title:blog["title3"],
+        body:"WebsiteImportance",
         keyWords:[
-            {Icon:SiNextdotjs,name:"Next.js"},
-            {Icon:SiTailwindcss,name:"TailwindCss"},
-            {Icon:SiNodedotjs,name:"Node.js"},
-            {Icon:SiJavascript,name:"Javascript"},
-            {Icon:SiMongodb,name:"MongoDB"},
+            {Icon:"SiNextdotjs",name:"Next.js"},
+            {Icon:"SiTailwindcss",name:"TailwindCss"},
+            {Icon:"SiNodedotjs",name:"Node.js"},
+            {Icon:"SiJavascript",name:"Javascript"},
+            {Icon:"SiMongodb",name:"MongoDB"},
         ]
-    },
-]
+        }]
+  }
+}}
