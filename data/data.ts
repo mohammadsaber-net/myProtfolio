@@ -1,6 +1,5 @@
-import { MERNstack, WebsiteImportance } from "@/components/blogDetails/blogsBody";
-import { NavItem } from "@/interface";
-import { FaCodepen,FaServer ,FaReact,FaAngular,FaBootstrap,FaCss3Alt,FaHtml5,FaGitAlt,FaGithub,FaDatabase } from "react-icons/fa";
+
+import {FaReact,FaAngular,FaBootstrap,FaCss3Alt,FaHtml5,FaGitAlt,FaGithub,FaDatabase } from "react-icons/fa";
 import {
   SiTypescript,
   SiJavascript,
@@ -65,12 +64,7 @@ export const myWorkExperience =(dict:any)=> {
       title3:skill["title5-1"],
       title4:skill["title5-2"],
     },
-    skills:[{
-      id: 1,
-      icon: "FaCodepen",
-      title: skill["title2-1"],
-      info:skill["title2-2"],
-  },
+    skills:[
   {
     id: 2,
     icon: "FaReact",
@@ -82,6 +76,11 @@ export const myWorkExperience =(dict:any)=> {
     icon: "FaDatabase",
     title: skill["title4-1"],
     info: skill["title4-2"],
+  },{
+      id: 1,
+      icon: "FaCodepen",
+      title: skill["title2-1"],
+      info:skill["title2-2"],
   }
     ]
   }   
@@ -136,6 +135,14 @@ export const myProjects=(dict:any)=>{
         code:"https://github.com/mohammadsaber-net/myProtfolio",
         image:"/images/portfolio.png",
         tools:["SiJavascript","SiNextdotjs","SiTailwindcss","FaReact","SiVercel"]
+    },
+    {
+        id:4,
+        title:project["title5"],
+        demo:"https://mohammadsaber-net.github.io/landing-courses/",
+        code:"https://github.com/mohammadsaber-net/landing-courses",
+        image:"/images/programming.png",
+        tools:["SiJavascript","FaHtml5","SiTailwindcss","FaCss3Alt","FaGithub"]
     },
 
 ]}}}

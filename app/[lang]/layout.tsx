@@ -9,20 +9,18 @@ import { AppProvider } from "@/components/context/AppContext";
 import { getDictionary } from "./dictionaries";
 import { myServices, myNavbar, myProjects, myWorkExperience, myBlogs } from "@/data/data";
 import LanguageSwitcher from "@/components/languages/lang";
-let language=''
-
 const inter = Inter({
   weight: ["100",'200',"300","600","700","900","400","800","500"],
   subsets: ["latin"],
 });
 export async function generateMetadata(
-  { params }: { params: { lang: string } }
-): Promise<Metadata> {
-  const lang = params.lang;
+  { params }: { params: any } 
+){
+  const { lang } = await params;
   const isArabic = lang === "ar";
 
   return {
-    title: isArabic? "محمد صابر | مطور ويب MERN و Next.js": "Mohammad Saber | Full-Stack MERN & Next.js Developer",
+    title: isArabic? "محمد صابر | مطور ويب MERN و Next.js": "Mohammad Saber | Full-Stack Web & MERN Developer",
    description: isArabic? "مطور Full-Stack متخصص في MERN و Next.js. أبني مواقع حديثة ومتجاوبة وعالية الأداء وتطبيقات ويب كاملة.": "Full-Stack developer specializing in MERN and Next.js. I build modern, responsive, high-performance websites and complete web applications.",
     keywords: [
       "full stack developer",
@@ -72,7 +70,6 @@ export default async function RootLayout({
   params: any;
 }>) {
   const { lang } = await params;
-  language=lang
   const dict = await getDictionary(lang);
   const Nav=myNavbar(dict)
   const Services=myServices(dict)

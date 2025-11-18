@@ -3,11 +3,11 @@ import { ProjectItem } from "@/interface";
 import { Link2 } from "lucide-react";
 import Link from 'next/link'
 import { useApp } from "../context/AppContext";
-import { FaReact,FaBootstrap,FaHtml5 } from "react-icons/fa";
+import { FaReact,FaBootstrap,FaHtml5,FaGithub,FaCss3Alt } from "react-icons/fa";
 import {SiJavascript,SiTailwindcss,SiRedux,SiNextdotjs,SiVercel,SiRender,SiMongodb} from "react-icons/si";
 export default function Projects() {
  const iconMap: Record<string, React.ComponentType<any>> = {
-  "FaHtml5":FaHtml5, "FaBootstrap":FaBootstrap, "FaReact":FaReact,"SiTailwindcss":SiTailwindcss,"SiJavascript":SiJavascript,
+  "FaHtml5":FaHtml5,"FaCss3Alt":FaCss3Alt,"FaGithub":FaGithub, "FaBootstrap":FaBootstrap, "FaReact":FaReact,"SiTailwindcss":SiTailwindcss,"SiJavascript":SiJavascript,
   "SiMongodb":SiMongodb, "SiRedux":SiRedux, "SiRender":SiRender,"SiNextdotjs":SiNextdotjs,"SiVercel":SiVercel
 };
       const app = useApp() as { Projects?: ProjectItem } | null;
@@ -38,7 +38,7 @@ export default function Projects() {
                     href={data.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mb-5 bg-cyan-500/70 flex items-center justify-center gap-2 text-white py-2"
+                    className="mb-5 bg-cyan-500/80 flex items-center justify-center gap-2 text-white py-2"
                   >
                     <Link2 /> {mainTitle.demo}
                   </Link>
@@ -46,7 +46,7 @@ export default function Projects() {
                     href={data.code}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-500/70 flex items-center justify-center gap-2 text-white py-2"
+                    className="bg-blue-500/80 flex items-center justify-center gap-2 text-white py-2"
                   >
                     <Link2 /> {mainTitle.code}
                   </Link>

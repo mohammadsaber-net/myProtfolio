@@ -30,7 +30,7 @@ export default function ContactForm({lang}:{lang:string}) {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto py-10">
+    <div className="w-full max-w-3xl mx-auto py-4">
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <input name="name" placeholder={isAr?"اضف اسمك":"Your Name"} required className="px-4 mb-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none rounded-md w-full placeholder:text-black dark:placeholder:text-white "/>
         <input name="email" type="email" placeholder={isAr?"اضف اميلك":"Your Email"} required className="px-4 mb-4 py-3.5 bg-slate-300 shadow-sm dark:bg-[#363659] outline-none rounded-md w-full placeholder:text-black dark:placeholder:text-white "/>

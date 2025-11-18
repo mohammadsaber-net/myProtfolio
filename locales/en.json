@@ -2,7 +2,7 @@
     "logo":"Mohammad",
     "service":"Service",
     "projects":"Projects",
-    "work": "Work-experience",
+    "work": "Skills",
     "blog":"Blog",
     "hire": "Hire Me",
     "download": "DownLoad CV"
@@ -10,41 +10,42 @@
     "hero":{
         "title1-1":"Creating modern UIs,clean architecture, and high-performance ",
         "title1-2":"web applications. ",
-        "title2-1":"Hi !, I'm Mohammad- A Passionate",
-        "title2-2":["Front-End Developer","Back-End Developer","Full-Stack Developer"],
-        "title3":"show my work"
+        "title2-1":"Hi !, I'm Mohammad- specializing in",
+        "title2-2":["Next.js Developer","MERN Developer","Full-Stack Developer","Front-End Developer","Back-End Developer"],
+        "title3":"View My Work"
     },
-    "service":{
-        "title1-1":"that we offers",
-        "title1-2":" services",
-        "title2-1":"Frontend Development",
-        "title2-2":"Building responsive, modern, and user-friendly interfaces using React and Next.js.",
-        "title3-1":"Backend Development",
-        "title3-2":"Creating secure, scalable APIs with Node.js, Express, and database integrations.",
-        "title4-1":"Full-Stack Web Applications",
-        "title4-2":"Delivering complete web solutions from UI to database with optimized performance.",
-        "title5-1":"UI Implementation",
-        "title5-2":"Translating UI/UX designs into high-quality, pixel-perfect code using Tailwind CSS."
-
-    },
+    "service": {
+  "title1-1": "that we offer",
+  "title1-2": " services",
+  "title2-1": "Frontend Development",
+  "title2-2": "Building responsive, modern, and user-friendly web interfaces using React and Next.js, optimized for speed and SEO.",
+  "title3-1": "Backend Development",
+  "title3-2": "Creating secure, scalable RESTful APIs with Node.js, Express, and MongoDB, perfect for full-stack web applications.",
+  "title4-1": "Full-Stack Web Applications",
+  "title4-2": "Delivering complete web solutions from UI to database with MERN Stack, Next.js, and React, tailored for businesses and startups.",
+  "title5-1": "UI Implementation",
+  "title5-2": "Translating UI/UX designs into high-quality, pixel-perfect responsive code using Tailwind CSS and Bootstrap."
+}
+,
     "project":{
         "title1-1":"A small selection of recent",
         "title1-2":" projects",
         "title2":"A Modern E-commerce Website",
         "title3":"Mini-Facebook Website",
         "title4":"A Super Class Portfolio",
+        "title":"An OutStanding Landing Page For Programming courses",
         "code":"code",
         "demo":"live demo"
     },
     "skill":{
-        "title1-1":"What you will get in case of",
+        "title1-1":"What you will get when",
         "title1-2":"hiring me",
-        "title2-1":"Problem Solving",
-        "title2-2":"Analyzing problems and building efficient, scalable solutions using modern web technologies.",
+        "title2-1":"Problem Solving & Efficient Solutions",
+        "title2-2":"Analyzing complex problems and building scalable, high-performance solutions using modern web technologies like React, Next.js, Node.js, and MongoDB.",
         "title3-1":"Frontend Engineering",
-        "title3-2":"Implementing clean, accessible, and optimized interfaces with React, Next.js, and Tailwind CSS.",
+        "title3-2":"Implementing clean, accessible, and optimized web interfaces with React, Next.js, Tailwind CSS, and Bootstrap for responsive and SEO-friendly websites.",
         "title4-1":"Backend Engineering",
-        "title4-2":"Designing structured APIs, managing databases, and ensuring performance with Node.js and MongoDB.",
+        "title4-2":"Designing structured APIs, managing databases, and ensuring performance and security using Node.js, Express, and MongoDB for full-stack web applications.",
         "title5-1":"tools & ",
         "title5-2":"Technologies"
         

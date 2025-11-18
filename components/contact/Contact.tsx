@@ -72,6 +72,7 @@ export default function Contact({dict,lang}:{lang:string;dict:{contact:{[key:str
         <h2 data-aos="fade-down" className="text-xl sm:text-2xl md:text-3xl capitalize font-bold tracking-wide">
             {lang==="ar"?"ارسل":"Send Me"} <span className="text-cyan-500">{lang==="ar"?"رسالة":"A Message"} </span>
         </h2>
+        <small className="capitalize text-gray-600 dark:text-gray-200">{lang==="ar"?"سيتم الرد في خلال ساعة باذن الله":"you will get a message within an hour"}</small>
         <div
         data-aos="zoom-in" data-aos-anchor-placement="top-center" 
         className="mt-5">

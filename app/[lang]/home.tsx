@@ -10,14 +10,27 @@ import Responsive from "@/components/navbar/Responsive";
 import Contact from "@/components/contact/Contact";
 import { useEffect } from "react";
 export default function HomeClient({ lang, dict }: { lang: "en" | "ar", dict: any }){
-  useEffect(() => {
+//   useEffect(() => {
+//   AOS.init({
+//     duration: 1000,
+//     easing: "ease",
+//     once: true,
+//     anchorPlacement: "top-bottom",
+//   })
+// }, []);
+useEffect(() => {
   AOS.init({
     duration: 1000,
     easing: "ease",
     once: true,
     anchorPlacement: "top-bottom",
-  })
+    startEvent: "DOMContentLoaded",
+    offset: 0,
+  });
+
+  AOS.refresh();
 }, []);
+
   return (
     <div className="overflow-hidden">
       <Responsive dict={dict} lang={lang}/>
