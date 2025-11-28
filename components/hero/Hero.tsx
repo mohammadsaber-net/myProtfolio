@@ -10,12 +10,12 @@ export default function Hero({dict,lang}:{dict:any,lang:string}) {
         <ParticlesHero />
       <div className='flex flex-col relative z-30 justify-center items-center'>
         <div data-aos="fade-up" className='overflow-hidden border-2 w-[150px] rounded-full h-[150px] border-gray-500'>
-            <img src="/images/user-1756384189933.jpeg" alt="hero image" className='w-full object-cover h-full'/>
+            <img src="/images/myPhoto.png" alt="hero image" className='w-full object-cover rotate-1 relative -left-2 h-full'/>
         </div>
         <h1 data-aos="fade-up" data-aos-delay="100" className='text-xl font-bold max-w-[550px] mt-4 md:mt-8 capitalize text-center tracking-wide sm:text-2xl md:text-4xl'>
             {heroDict["title1-1"]} <span className='text-cyan-500'>{heroDict["title1-2"]}</span>
         </h1>
-        <div  data-aos="fade-down" data-aos-delay="100" className='text-xs flex sm:text-sm md:text-xl'>
+        <div  data-aos="slide-right" className='text-xs flex sm:text-sm md:text-xl'>
            {heroDict["title2-1"]}
             <Typewriter 
             options={{

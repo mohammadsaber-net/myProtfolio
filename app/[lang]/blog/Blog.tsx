@@ -24,7 +24,7 @@ export default function Blog({lang}:{lang:string}) {
            {mainTitle.title1} <span className="text-cyan-500">{mainTitle.title2}</span>
         </h2>
         <div
-        data-aos="zoom-in" data-aos-anchor-placement="top-center" 
+        data-aos="slide-left" data-aos-anchor-placement="top-center" 
         className="mt-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {blog.map((item)=>{
             

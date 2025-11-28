@@ -18,7 +18,7 @@ export default function Responsive({dict,lang}:{lang:string;dict:any}) {
     return()=>window.removeEventListener("scroll",handler)
   },[])
   return (
-    <div className={`transition h-[8vh] md:h-[12vh] ${navBg?`bg-[#9e9a9aa9] dark:bg-[#0f142ed9]`:"dark:bg-[#0d0d1f] bg-gray-100"} px-6 shadow-md w-full
+    <header className={`transition h-[8vh] md:h-[12vh] ${navBg?`bg-[#9e9a9aa9] dark:bg-[#0f142ed9]`:"dark:bg-[#0d0d1f] bg-gray-100"} px-6 shadow-md w-full
        z-40 flex justify-between items-center fixed top-0`}>
       <div className='flex gap-2 cursor-pointer items-center'>
         
@@ -41,6 +41,6 @@ export default function Responsive({dict,lang}:{lang:string;dict:any}) {
       </a>
       <MenuIcon onClick={()=>setOpenMobile(true)} className='md:hidden block cursor-pointer'/>
       <Mobile openMobile={opeMobile} setOpenMobile={setOpenMobile}/>
-    </div>
+    </header>
   )
 }

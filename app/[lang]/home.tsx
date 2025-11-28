@@ -32,7 +32,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="overflow-hidden">
+    <main className="overflow-hidden">
       <Responsive dict={dict} lang={lang}/>
       <Hero dict={dict} lang={lang}/>
       <Service />
@@ -40,6 +40,6 @@ useEffect(() => {
       <Skills />
       <Blog lang={lang}/>
       <Contact lang={lang} dict={dict}/>
-    </div>
+    </main>
   );
 }
