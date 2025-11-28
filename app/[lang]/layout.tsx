@@ -41,11 +41,11 @@ export async function generateMetadata(
       title: "Mohammad Saber | Full-Stack MERN & Next.js Developer",
       description:
         "Building scalable and modern web apps using MERN Stack and Next.js.",
-      url: `https://my-protfolio-one-delta.vercel.app/${lang}`,
+      url: `https://www.mohammad-saber.site/${lang}`,
       siteName: "Mohammad Saber Portfolio",
       images: [
         {
-          url: `https://my-protfolio-one-delta.vercel.app/${lang}/preview.png`,
+          url: `https://www.mohammad-saber.site/images/myPhoto.png`,
           width: 1200,
           height: 630,
           alt: "Mohammad Saber Full-Stack Developer"
@@ -55,10 +55,10 @@ export async function generateMetadata(
       type: "website"
     },
     alternates: {
-      canonical: `https://my-protfolio-one-delta.vercel.app/${lang}`,
+      canonical: `https://www.mohammad-saber.site/${lang}`,
       languages: {
-        en: "https://my-protfolio-one-delta.vercel.app/en",
-        ar: "https://my-protfolio-one-delta.vercel.app/ar"
+        en: "https://www.mohammad-saber.site/en",
+        ar: "https://www.mohammad-saber.site/ar"
       }
     }
   };
